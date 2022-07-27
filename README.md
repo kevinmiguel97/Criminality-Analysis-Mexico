@@ -41,7 +41,7 @@ The purpose of this project is to generate a database of the level of criminalit
         - carpetas - carpetas (int): Number of open folders opened of the specific type of crime
         - tasa - tasa: Crimes for every 10,000 people
         
-- ### [Population by municipality](data/poblacion_2015.csv) (Source: [INAFED](https://www.gob.mx/inafed))
+- ### [Population by municipality](data/poblaciones_2015.csv) (Source: [INAFED](https://www.gob.mx/inafed))
      #### Variables: original name - code name (type):
         - estado - entidad (string): Name of the state
         - municipio - municipio (string): Name of the municipality
