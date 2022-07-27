@@ -29,5 +29,51 @@ The purpose of this project is to generate a database of the level of criminalit
   
  <a id="dataset"></a>
  ## Datasets descriptions
- For this project we worked 
+ For this project we worked with the following databases: 
+ - ### [Crimes committed during 2021](data/delitos-datos-abiertos.csv) (Source: [Observatorio Nacional Ciudadano](https://delitosmexico.onc.org.mx/descargar))
+     #### Variables: original name - code name (type):
+        - inegi_entidad - id_entidad (int): Unique number for each of the 32 states in Mexico
+        - entidad - entidad (string): Name of the state 
+        - inegi_municipio - id_municipio (int): Unique number for each of the municipalities (example: 1001 -> Municipality 1 from state 1
+                                                                                        1002 -> Municipality 2 from state 1) 
+        - id_delito - id_delito: Unique number for each type of crime
+        - delito - delito (string): Name of the crime
+        - carpetas - carpetas (int): Number of open folders opened of the specific type of crime
+        - tasa - tasa: Crimes for every 10,000 people
+        
+- ### [Population by municipality](data/poblacion_2015.csv) (Source: [INAFED](https://www.gob.mx/inafed))
+     #### Variables: original name - code name (type):
+        - estado - entidad (string): Name of the state
+        - municipio - municipio (string): Name of the municipality
+        - cve_inegi - id_municipio: id_municipio (int): Unique number for each of the municipalities (example: 1001 -> Municipality 1 from state 1
+                                                                                        1002 -> Municipality 2 from state 1) 
+        - id_estado - id_entidad (int): Unique number for each of the 32 states in Mexico
+        - hombres - hombres (int): Male population
+        - mujeres - mujeres (int): Female population
+        - total - total (int): Total population
+        
+- ### [Zip codes by neighborhood](data/codigos-postales-mexico.xlsx) (Source: [ExcelTotal](https://exceltotal.com/codigos-postales-de-mexico-en-excel/#google_vignette) based on Correos de México)
+    ### Variables: original name - code name (type):
+        - Código - cp (int): Zip code of the neighborhood
+        - Asentamiento - Asentamineto (string): Name of neighborhood
+        - Type - Type (string): Type of neighborhood
+        - Municipality - municipio (string): Municipality Name
+        - Ciudad - Ciudad (string): City Name
+        - Estado - entidad (string): Name of the state
+      
+- ### [Coordenates of neighborhoods](data/coordenates_colonias.csv) (Source: [Eduardo Aranda](https://github.com/eduardoarandah/coordenadas-estados-municipios-localidades-de-mexico-json))
+    ### Variables: original name - code name (type):
+        - CVE_ENT - id_entidad (int): Unique number for each of the 32 states in Mexico
+        - NOM_ENT - entidad (string): Name of the state
+        - CVE_MUN - id_municipio (int): Unique number for each of the municipalities (example: 1 -> Municipality 1 without specifying state)
+        - CVE_LOC - id_loc (int): Uniqe ID for each neighborhood 
+        - NOM_LOC (string): Name of the neighborhood
+        - LAT_DEC - lat (float): Lattitude
+        - LON_DEC - lon (float): Longitude
+        
+        
+                                                                                        
+        
+ 
+ 
  
