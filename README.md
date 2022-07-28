@@ -71,6 +71,11 @@ The purpose of this project is to generate a database of the level of criminalit
         - LAT_DEC - lat (float): Lattitude
         - LON_DEC - lon (float): Longitude
         
+ <a id="cleaning"></a>
+ ## Data cleaning
+ Because each dataset came from different sources, and the main goal of the project is to join them into a useful dataset containing the relevant variables, some data cleaning and specially data conciliation had to be made for all datasets used
+ ### Conciliating data
+        
         
                                                                                         
         
