@@ -8,7 +8,7 @@
 - [Tools applied](#tools)
 - [Dataset description](#dataset)
 - [Data cleaning](#cleaning)
-- [Exploratory data analysis](#exploratory)
+- [Data merging](#merging)
 
 See the complete code [Notebook](Crime_analysis.ipynb)
 
@@ -75,10 +75,54 @@ The purpose of this project is to generate a database of the level of criminalit
  ## Data cleaning
  Because each dataset came from different sources, and the main goal of the project is to join them into a useful dataset containing the relevant variables, some data cleaning and specially data conciliation had to be made for all datasets used
  
+ ### Format cleaning
+ Several steps of data formatting cleaning were needed to make the data compatible among all databases. The following cleaning porcesses were applied:
+ - Deleting notes at the end of some rows in data
+ - Removing spaces from the municpio name
+ - Fixing misslabled data issues in the population dataset for some Chiapas rows (example: 70100 replaced with 7100) 
+ - Deleting districts from some states (example: -Dto.08-) 
+ - Some mannual mappings made through human research
+ 
  ### Conciliating data
  
  #### Conciliating function
  A function was created to compare whatever columns are going to be used to merge datasets (let's call these columns indexes). This function, basically, validates if every element in index 1 exists in index 2, if not it prints the index that is measing, and then appleis the same process, validating that every element in index 2 exists in index 1, otherwise it prints a wanrning. 
+
+ ### 
+        # Creating list of unique ids in each dataset
+        unique_var_base1 = base1['column'].unique()
+        unique_var_base2 = base2['column'].unique()
+        
+        # Tracking missing values
+        count = 0
+
+        # Len of the lists
+        len_var_base1 = len(base1['column'].unique())
+        len_var_base2 = len(base2['column'].unique())
+
+        for i in unique_var_base2:
+            if i not in unique_var_base1:
+                count+=1
+                print('column {} does not exist in base1 data'.format(i))
+
+        for i in unique_var_base1:
+            if i not in unique_var_base2:
+                count+=1
+                print('column {} does not exist in base2 data'.format(i))
+
+        print('No missing values')
+
+        if len_id_df == len_id_base2 and count == 0:
+            print('Equal lenghts')
+            print('Ready to merge crimes and base2')
+ 
+ 
+ <a id="merging"></a>
+ 
+ ## Data merging
+ 
+ 
+
         
         
                                                                                         
