@@ -74,7 +74,11 @@ The purpose of this project is to generate a database of the level of criminalit
  <a id="cleaning"></a>
  ## Data cleaning
  Because each dataset came from different sources, and the main goal of the project is to join them into a useful dataset containing the relevant variables, some data cleaning and specially data conciliation had to be made for all datasets used
+ 
  ### Conciliating data
+ 
+ #### Conciliating function
+ A function was created to compare whatever columns are going to be used to merge datasets (let's call these columns indexes). This function, basically, validates if every element in index 1 exists in index 2, if not it prints the index that is measing, and then appleis the same process, validating that every element in index 2 exists in index 1, otherwise it prints a wanrning. 
         
         
                                                                                         
