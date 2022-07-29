@@ -176,6 +176,8 @@ With the final database we were able to generate visualizations of any geographi
     <br>
 </h3>
 
+Specific and total maps for the remaining 32 states can be found in the [maps](https://github.com/kevinmiguel97/Criminality-Analysis-Mexico/tree/main/maps) folder
+
 
 
  
