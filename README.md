@@ -9,6 +9,7 @@
 - [Dataset description](#dataset)
 - [Data cleaning](#cleaning)
 - [Data merging](#merging)
+- [Classification](#classification)
 
 See the complete code [Notebook](Crime_analysis.ipynb)
 
@@ -120,6 +121,13 @@ The purpose of this project is to generate a database of the level of criminalit
  <a id="merging"></a>
  
  ## Data merging
+ 
+ - Population and Zip codes (cp_pop): These datasets were joined by creating a dummy variable made by entidad+municipio to ensure the integrity of the information as no other common attribute existed. Essentially we now have a dataset ocntaining information about the population at a municipality level and zip codes at a neighborhood level. 
+ 
+ - The dataset above was then grouped by municipality in terms of population and combined with the crimes dataset using the id_municipio and then grouped again in a municipality level. Effectively, we generated a dataset with crimes and population by municipality. 
+ 
+ <a id="classification"></a>
+## Classification
  
  
 
