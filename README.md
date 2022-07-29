@@ -156,7 +156,7 @@ Each municipality was classified into one of 5 categories based on the statistic
 With the final database we were able to generate visualizations of any geographic region in the country based on the classification made. 
 
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="950px" src="https://github.com/kevinmiguel97/Criminality-Analysis-Mexico/blob/main/assets/map_municipios.png">
+    <img alt="Logo" title="#logo" width="950px" src="https://github.com/kevinmiguel97/Criminality-Analysis-Mexico/blob/main/assets/maps_country.png">
     <br>
 </h3>
 
