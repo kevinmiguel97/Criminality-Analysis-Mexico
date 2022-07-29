@@ -10,6 +10,7 @@
 - [Data cleaning](#cleaning)
 - [Data merging](#merging)
 - [Classification](#classification)
+- [Maps](#maps)
 
 See the complete code [Notebook](Crime_analysis.ipynb)
 
@@ -151,6 +152,8 @@ Each municipality was classified into one of 5 categories based on the statistic
     - Class 3: Between 75th and 87th percentile
     - Class 4: Higuer than 87th percentile
     
+ <a id="maps"></a>
+ 
 ## Maps
 
 With the final database we were able to generate visualizations of any geographic region in the country based on the classification made. 
