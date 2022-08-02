@@ -10,6 +10,7 @@
 - [Data cleaning](#cleaning)
 - [Data merging](#merging)
 - [Classification](#classification)
+- [Maps](#maps)
 
 See the complete code [Notebook](Crime_analysis.ipynb)
 
@@ -151,14 +152,34 @@ Each municipality was classified into one of 5 categories based on the statistic
     - Class 3: Between 75th and 87th percentile
     - Class 4: Higuer than 87th percentile
     
+ <a id="maps"></a>
+ 
 ## Maps
 
 With the final database we were able to generate visualizations of any geographic region in the country based on the classification made. 
+
+### Country Map
 
 <h3 align="center">
     <img alt="Logo" title="#logo" width="950px" src="https://github.com/kevinmiguel97/Criminality-Analysis-Mexico/blob/main/assets/maps_country.png">
     <br>
 </h3>
+
+### Jaliso Map
+
+<h3 align="center">
+    <img alt="Logo" title="#logo" width="950px" src="https://github.com/kevinmiguel97/Criminality-Analysis-Mexico/blob/main/assets/maps_jalisco.png">
+    <br>
+</h3>
+
+### Puebla Map
+
+<h3 align="center">
+    <img alt="Logo" title="#logo" width="950px" src="https://github.com/kevinmiguel97/Criminality-Analysis-Mexico/blob/main/assets/maps_puebla.png">
+    <br>
+</h3>
+
+Specific and total maps for the remaining 32 states can be found in the [maps](https://github.com/kevinmiguel97/Criminality-Analysis-Mexico/tree/main/maps) folder
 
 
 
