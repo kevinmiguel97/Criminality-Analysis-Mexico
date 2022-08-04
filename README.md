@@ -152,6 +152,8 @@ Each municipality was classified into one of 5 categories based on the statistic
     - Class 3: Between 75th and 87th percentile
     - Class 4: Higuer than 87th percentile
     
+ * The ranges change with respect to the ones used for total crimes because untill the 50th percentile only municipalities with 0 crimes are contained.
+ 
  <a id="maps"></a>
  
 ## Maps
